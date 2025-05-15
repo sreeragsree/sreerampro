@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-d9wcafom6h#pc^m=askhrn+1ysfqsj8*^t0f$v(_0dqajqyn+@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.220.35', '127.0.0.1', 'localhost']
+CSRF_TRUSTED_ORIGINS = ['http://192.168.220.35:8000'] #Include the port if it's not the default 80
 
 
 # Application definition
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'customers',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

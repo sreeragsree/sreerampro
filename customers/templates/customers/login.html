@@ -1,20 +1,24 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login - SREERAM BANKERS</title>
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             padding: 0;
         }
+
         body {
             min-height: 100vh;
             display: flex;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #1883f6;
         }
+
         .split-left {
             flex: 1.2;
             color: #fff;
@@ -25,26 +29,31 @@
             padding: 0 5vw 0 0;
             background: #1883f6;
         }
+
         .branding {
             max-width: 420px;
             text-align: left;
         }
+
         .branding h1 {
             font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 1.2rem;
             letter-spacing: 2px;
         }
+
         .branding .tagline {
             font-size: 1.3rem;
             font-weight: 500;
             margin-bottom: 1.2rem;
         }
+
         .branding .desc {
             font-size: 1rem;
             font-weight: 400;
             color: #e3e3e3;
         }
+
         .split-right {
             flex: 1;
             display: flex;
@@ -52,38 +61,45 @@
             justify-content: flex-start;
             background: #1883f6;
         }
+
         .login-card {
             background: #fff;
             border-radius: 18px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
             padding: 2.5rem 2.2rem 2rem 2.2rem;
             width: 100%;
             max-width: 370px;
             margin-left: 2vw;
         }
+
         .login-card h2 {
             margin: 0 0 0.5rem 0;
             font-size: 1.5rem;
             font-weight: 600;
             color: #222;
         }
+
         .login-card .signup-link {
             font-size: 0.97rem;
             color: #555;
             margin-bottom: 1.2rem;
         }
+
         .login-card .signup-link a {
             color: #1883f6;
             text-decoration: none;
         }
+
         .login-card .signup-link a:hover {
             text-decoration: underline;
         }
+
         .login-card form {
             display: flex;
             flex-direction: column;
             gap: 1rem;
         }
+
         .login-card input[type="text"],
         .login-card input[type="password"] {
             padding: 11px 12px;
@@ -93,29 +109,36 @@
             background: #fafbfc;
             transition: border 0.2s;
         }
+
         .login-card input:focus {
             border: 1.5px solid #1883f6;
             outline: none;
         }
+
         .login-card .form-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
+
         .login-card .form-row label {
             font-size: 0.97rem;
             color: #555;
         }
+
         .login-card .form-row .forgot {
             font-size: 0.97rem;
         }
+
         .login-card .form-row .forgot a {
             color: #1883f6;
             text-decoration: none;
         }
+
         .login-card .form-row .forgot a:hover {
             text-decoration: underline;
         }
+
         .login-card button[type="submit"] {
             background: #1883f6;
             color: #fff;
@@ -128,21 +151,25 @@
             margin-top: 0.5rem;
             transition: background 0.2s;
         }
+
         .login-card button[type="submit"]:hover {
             background: #0f6ad1;
         }
+
         .login-card .or {
             text-align: center;
             color: #aaa;
             margin: 1.2rem 0 0.7rem 0;
             font-size: 0.95rem;
         }
+
         .login-card .socials {
             display: flex;
             justify-content: center;
             gap: 1.1rem;
             margin-bottom: 0.5rem;
         }
+
         .login-card .social-btn {
             width: 38px;
             height: 38px;
@@ -155,22 +182,27 @@
             cursor: pointer;
             transition: border 0.2s;
         }
+
         .login-card .social-btn:hover {
             border: 1.5px solid #1883f6;
         }
+
         .login-card .social-btn img {
             width: 20px;
             height: 20px;
         }
+
         @media (max-width: 900px) {
             .split-left {
                 display: none;
             }
+
             .split-right {
                 justify-content: center;
                 flex: 1 1 100%;
             }
         }
+
         .branding-logo {
             width: 64px;
             height: 64px;
@@ -180,13 +212,15 @@
         }
     </style>
 </head>
+
 <body>
     <div class="split-left">
         <div class="branding">
 
             <h1>SREERAM BANKERS</h1>
             <div class="tagline">We make banking simple and secure.</div>
-            <div class="desc">Manage your finances, transfer funds, and access your account securely with Sreeram Bankers.</div>
+            <div class="desc">Manage your finances, transfer funds, and access your account securely with Sreeram
+                Bankers.</div>
         </div>
     </div>
     <div class="split-right">
@@ -204,11 +238,12 @@
             </form>
             <div class="or">Or continue with</div>
             <div class="socials">
-                <div class="social-btn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google"></div>
-                <div class="social-btn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook"></div>
-                <div class="social-btn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="Apple"></div>
+                <div class="social-btn"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                        alt="Google"></div>
             </div>
         </div>
     </div>
 </body>
-</html> 
+
+</html>

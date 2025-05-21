@@ -52,3 +52,6 @@ def clean(self):
 
         if password1 and password2 and password1 != password2:
             raise forms.ValidationError("Passwords do not match.")
+        
+
+        

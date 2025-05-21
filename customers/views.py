@@ -5,6 +5,8 @@ from .forms import CustomUserCreationForm
 from django.contrib.auth.decorators import login_required
 from .models import Customer
 from django import forms
+from django.shortcuts import get_object_or_404, redirect
+
 
 class CustomerForm(forms.ModelForm):
     class Meta:
@@ -47,3 +49,9 @@ def customer_entry(request):
         form = CustomerForm()
     customers = Customer.objects.all()
     return render(request, 'customers/customer_entry.html', {'form': form, 'customers': customers})
+
+def delete_customer(request, pk):
+    if request.method == 'POST':
+        customer = get_object_or_404(Customer, pk=pk)
+        customer.delete()
+    return redirect('customer_entry')
